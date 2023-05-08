@@ -14,10 +14,24 @@
           <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         </a-assets>
         <a-sky src="assets/test.png"></a-sky>
-        <a-box id="box1" src="assets/wood.jpg" position="-140 -30 -10" rotation="0 45 0" scale="20 2 40"
-        animation__position="property: position; to: 60 -60 200; dir: alternate; dur: 10000; loop: true"
+        <a-box id="base" src="assets/wood.jpg" position="-140 -30 -10" rotation="0 45 0" scale="30 2 40"
+    
+        animation__position="property: position; to: 180 -60 500; dir: alternate; dur: 10000; loop: true"
         animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
         animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+
+        <a-box id="post" src="assets/wood.jpg" position="-140 -10 -10" rotation="0 45 0" scale="2 50 2"
+    
+        animation__position="property: position; to: 180 -35 500; dir: alternate; dur: 10000; loop: true"
+        animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
+        animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+
+        <a-triangle id="triangle1" src="assets/flag.jpg" position="-140 6 -20" rotation="0 90 -90" scale="20 20 20"
+    
+        animation__position="property: position; to: 170 -12 495; dir: alternate; dur: 10000; loop: true"
+        animation__rotation="property: rotation; to: 0 180 -90; dir: alternate; dur: 10000; loop: true"
+        animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
+        animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-triangle>
       </a-scene>
   </body>
 </html>
